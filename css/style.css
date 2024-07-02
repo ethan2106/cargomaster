@@ -1,0 +1,181 @@
+/* Import des fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+
+/* Style global */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Kreon', sans-serif;
+}
+
+.text-floating {
+    animation: floatText 3s ease-in-out infinite;
+}
+
+@keyframes floatText {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Effet d'entrée pour les paragraphes */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Couleur des liens au survol de la navbar */
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+/* tailles des icones de la navbar*/
+.nav-link i {
+  font-size: 1.5em; /* adjust the size to your liking */
+}
+
+/* Section hero */
+.hero {
+    background-image: url('/img/blurry-1800136_1920.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-image img.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+    #custom-container {
+        padding: 1rem;
+        margin-left: 0; /* Réglage pour les écrans plus petits */
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .hero .col-md-6 {
+        margin-bottom: 1rem;
+    }
+
+    .hero .display-3, .hero .display-5 {
+        font-size: 1.5rem;
+    }
+
+    .hero .btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Texte noir pour le modal */
+.modal-text-black {
+    color: #000;
+}
+
+/* Icônes Bootstrap */
+.icon-primary {
+    color: #007bff;
+}
+
+.icon-warning {
+    color: #ffc107;
+}
+
+.icon-success {
+    color: #28a745;
+}
+
+.icon-large {
+    font-size: 1rem;
+}
+
+/* Ombre sur les textes */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Taille des cartes pour les avantages chauffeurs */
+.card-img-custom {
+    height: 350px;
+    object-fit: cover;
+}
+
+.card-img-custom.avantage-img {
+    height: 15rem;
+    object-fit: cover;
+}
+
+/* Ajout d'un léger zoom sur la carte */
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Séparateur vertical */
+.vertical-line {
+    width: 2px;
+    background-color: white;
+}
+
+/* Style pour le bouton Connexion */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    padding: 14px 28px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style de la carte Contact Discord */
+.card-discord {
+    background-image: url('/img/blurry-1800136_1920.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style pour le défilement fluide des liens ancrés */
+a[href*="#"] {
+  transition: all 0.3s ease;
+}
+
+a[href*="#"]:hover {
+  color: #3E75AE;
+}
