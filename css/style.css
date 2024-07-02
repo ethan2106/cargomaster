@@ -166,9 +166,9 @@ h2, h3, h4, h5, h6 {
 
 /* Style de la carte Contact Discord */
 .card-discord {
-    background-image: url('/img/blurry.png');
-    background-size: cover;
-    background-position: center;
+  background-image: url('/img/blurry.png');
+  background-size: cover;
+  background-position: center;
 }
 
 /* Style pour le défilement fluide des liens ancrés */
