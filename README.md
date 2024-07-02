@@ -21,3 +21,25 @@ Comment contribuer:
 Remerciements
 Je tiens à remercier toutes les ressources en ligne, tutoriels et communautés de développeurs qui m'ont aidé à progresser jusqu'ici.
 
+---------------------------------------------------------------------------------
+
+Welcome to my space!
+My description:
+I am currently learning to code and this is my first web project. My goal is to create a well-structured site with clear, airy, and clean code.
+
+Project objectives:
+Improve my skills with HTML, CSS, and Bootstrap (and later Tailwind)
+Apply my knowledge of HTML, CSS, and JavaScript
+Enhance my design skills (and it's urgent since I exclusively use images either royalty-free or created by AI)
+Project structure:
+The project is structured to make the code easy to understand and navigate. Here are the main sections:
+
+index.html: The main file containing the basic HTML structure of my site.
+css/: CSS file(s) where I define styles to make my site attractive and responsive.
+js/: JavaScript file(s) containing interactive features for my site.
+How to contribute:
+As a beginner, I am open to any suggestions, corrections, or advice to improve my code and development skills. Feel free to explore the code and share your feedback!
+
+Acknowledgments:
+I would like to thank all online resources, tutorials, and developer communities that have helped me progress so far.
+
