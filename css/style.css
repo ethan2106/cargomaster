@@ -58,7 +58,7 @@ h2, h3, h4, h5, h6 {
 
 /* Section hero */
 .hero {
-    background-image: url('../img/blurry-1800136_1920.png');
+    background-image: url('/img/blurry.png');
     background-size: cover;
     background-position: center;
 }
@@ -166,7 +166,7 @@ h2, h3, h4, h5, h6 {
 
 /* Style de la carte Contact Discord */
 .card-discord {
-    background-image: url('/img/blurry-1800136_1920.webp');
+    background-image: url('/img/blurry.png');
     background-size: cover;
     background-position: center;
 }
