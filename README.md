@@ -21,7 +21,7 @@ Comment contribuer:
 Remerciements
 Je tiens à remercier toutes les ressources en ligne, tutoriels et communautés de développeurs qui m'ont aidé à progresser jusqu'ici.
 
----------------------------------------------------------------------------------
+-----------------
 
 Welcome to my space!
 My description:
