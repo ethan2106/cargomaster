@@ -30,7 +30,7 @@ I am currently learning to code and this is my first web project. My goal is to 
 Project objectives:
 Improve my skills with HTML, CSS, and Bootstrap (and later Tailwind)
 Apply my knowledge of HTML, CSS, and JavaScript
-Enhance my design skills (and it's urgent since I exclusively use images either royalty-free or created by AI)
+Enhance my design skills (and it's urgent since I exclusively use images either free or created by AI)
 Project structure:
 The project is structured to make the code easy to understand and navigate. Here are the main sections:
 
