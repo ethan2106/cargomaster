@@ -20,6 +20,7 @@ body {
     background-position: center;
 }
 
+
 /* marge verticale */
 .marge-150{
     margin-top: 150px; /* Ajustez la valeur selon vos besoins */
@@ -101,6 +102,8 @@ body {
     background-color: #0056b3;
     border-color: #0056b3;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Add a scale effect on hover */
+    transform: scale(1.05);
 }
 
 /* discord carte */
@@ -151,8 +154,8 @@ body {
     #custom-container {
         padding: 1rem;
         margin-left: 0; /* Réglage pour les écrans plus petits */
+        
     }
-
     .hero {
         padding: 2rem 1rem;
     }
@@ -189,3 +192,28 @@ body {
   h1 {
     animation: slide-loop 3s ease-in-out infinite;
   }
+
+  /* animation des sections */
+  .section {
+    opacity: 0;
+    transform: translateY(20px); /* Animation de départ */
+    transition: opacity 2.0s ease-in-out, transform 3.5s ease-in-out;
+}
+
+/* Animation finale */
+.section.in-view {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+/* Animation fade-in pour les sections */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
