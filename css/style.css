@@ -63,6 +63,7 @@ body {
     filter: brightness(1.1); /* Éclaircit légèrement l'image */
 }
 
+/* titre animé  avec une ligne bleue*/
 .animated-title {
     position: relative;
     animation: text-float 2s ease-in-out infinite, text-glow 2s ease-in-out infinite;
