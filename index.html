@@ -12,7 +12,7 @@
   <meta name="copyright" content="2024 CargoMaster">
   <meta property="og:title" content="CargoMaster - Entreprise virtuelle pour Euro Truck Simulator 2">
   <meta property="og:description" content="CargoMaster est une entreprise virtuelle fictive pour le jeu Euro Truck Simulator 2, offrant des services de transport moderne et efficace à travers la France et ses pays voisins.">
-  
+
   <!-- Titre de la page -->
   <title>CargoMaster - Entreprise virtuelle pour Euro Truck Simulator 2</title>
 
@@ -21,234 +21,219 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  
+
   <!-- Bootstrap Icons CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- font awesome CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <!-- CSS personnalisé -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="bg-dark">
-  
-<!-- Section en-tête avec la barre de navigation -->
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#accueil"><img src="img/logo-transparent-petit.png" class="logo-img zoom-in-out" title="logo de CargoMaster" loading="lazy"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#accueil"><span style="font-size: 1.5em;">&#127968;</span> Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#avantages"><span style="font-size: 1.5em;">&#128666;</span> Nos avantages</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#en-ligne"><span style="font-size: 1.5em;">&#127918;</span> Nous joindre en jeu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact"><span style="font-size: 1.5em;">&#128199;</span> Nous contacter</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
 
-<!-- Section du contenu principal -->
-<main>
-  <!-- Section Hero -->
-  <section id="accueil" class="hero bg-primary text-white vh-100 vw-100 d-flex align-items-center justify-content-center hero-background">
-    <div id="custom-container" class="container-fluid">
-      <div class="row">
-        <!-- Section image -->
-        <div class="col-md-6 text-center order-md-2 hero-image">
-          <img src="./img/ets2.png" title="Bienvenue sur CargoMaster" class="img-fluid rounded hero-img" alt="Image représentant un camion provenant du jeu Euro Truck Simulator 2" loading="lazy">
+  <!-- Section en-tête avec la barre de navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#accueil"><img src="img/logo-transparent-petit.png" class="logo-img zoom-in-out" title="logo de CargoMaster" loading="lazy"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#accueil"><i class="fas fa-home me-2"></i> Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#avantages"><i class="fas fa-star me-2"></i> Nos avantages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#en-ligne"><i class="fas fa-truck me-2"></i> Nous joindre en jeu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"><i class="fas fa-envelope me-2"></i> Nous contacter</a>
+            </li>
+          </ul>
+          <div class="ms-auto me-5">
+            <a href="https://discord.gg/a-venir" class="btn btn-discord d-flex align-items-center" target="_blank">
+              <i class="fab fa-discord discord-icon me-2"></i>
+              <span class="discord-text">Rejoins notre Discord</span>
+            </a>
+          </div>
         </div>
-        <!-- Section contenu textuel -->
-        <div class="col-md-6 text-center order-md-1 marge-150">
-          <h1 class="display-3 text-shadow text-floating">Bienvenue sur CargoMaster</h1>
-          <h2 class="display-5 text-shadow text-floating">La puissance du transport moderne.</h2>
-          <p>
-            <span class="text-primary text-gras">Bienvenue chez CargoMaster !</span>Basé à Reims, notre entreprise virtuelle sur le jeu EuroTruck Simulator 2 vous propose des services de livraison rapide et fiable partout en France et dans les pays voisins· En tant que seul membre de l'équipe,je me <br>suis spécialisé dans les contrats de traction, assurant un service personnalisé et efficace· Faites appel à CargoMaster pour tous vos besoins de transport avec succès garanti ! 🚚🌍 
-          </p>
-          <!-- Section boutons -->
-          <div class="text-center">
-            <div class="container mt-6">
-              <div class="row justify-content-center">
-                <div class="col-md-6 text-center">
-                  <a href="#avantages" class="btn btn-lg btn-primary">Découvre pourquoi nous !</a>
-                </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Section du contenu principal -->
+  <main>
+    <!-- Section Hero -->
+    <section id="accueil" class="hero bg-primary text-white vh-100 d-flex align-items-center justify-content-center hero-background">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 order-md-2">
+            <div class="hero-image text-center">
+              <img src="./img/ets2.png" class="img-fluid rounded-circle hero-img" alt="Image représentant un camion provenant du jeu Euro Truck Simulator 2" loading="lazy">
+            </div>
+          </div>
+          <div class="col-md-6 order-md-1">
+            <div class="hero-content">
+              <h1 class="display-3 text-shadow animated-title">Bienvenue sur CargoMaster</h1>
+              <p class="lead text-shadow">Bienvenue chez CargoMaster ! Basé à Reims, notre entreprise virtuelle sur le jeu EuroTruck Simulator 2 vous propose des services de livraison rapide et fiable partout en France et dans les pays voisins.</p>
+              <a href="#avantages" class="btn btn-lg btn-primary">Découvre pourquoi nous !</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de la section Hero -->
+
+    <!-- Section Avantages -->
+    <section id="avantages" class="py-5 mb-5">
+      <div class="container">
+        <h2 class="display-4 text-center mb-4 text-white p-2 text-shadow text-floating mt-5 animated-title">Avantages & Communauté</h2>
+        <div class="row justify-content-center p-2">
+          <!-- Avantage 1 -->
+          <div class="col-md-4 mb-4 d-flex">
+            <div class="card custom-card h-100">
+              <img src="./img/attitre.png" class="card-img-top" alt="Chaque camion est attitré">
+              <div class="card-body">
+                <h3 class="card-title text-center">Chaque camion est attitré</h3>
+                <p class="card-text">Chez CargoMaster, chaque chauffeur se voit attribuer un camion dès son arrivée. Nous nous engageons à vous offrir des véhicules modernes pour surmonter tous les défis de la route.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Avantage 2 -->
+          <div class="col-md-4 mb-4 d-flex">
+            <div class="card custom-card h-100">
+              <img src="./img/online-offline.png" class="card-img-top" alt="Jouer en ligne ou hors ligne">
+              <div class="card-body">
+                <h3 class="card-title text-center">en ligne ou hors ligne ?</h3>
+                <p class="card-text">Nous accueillons tous les joueurs, qu'ils soient en ligne sur TruckerMP ou hors ligne. Chez CargoMaster, chaque chauffeur a sa place dans notre communauté.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Avantage 3 -->
+          <div class="col-md-4 mb-4 d-flex">
+            <div class="card custom-card h-100">
+              <img src="./img/appel-discord.png" class="card-img-top" alt="Communauté Discord">
+              <div class="card-body">
+                <h3 class="card-title text-center">Rejoignez notre Discord</h3>
+                <p class="card-text">Rejoindre le serveur Discord où tout le monde est le bienvenu ! Le micro n'est pas obligatoire ! Venez discuter avec nous et retrouvez toutes les informations sur notre compagnie virtuelle.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Fin de la section Hero -->
+    </section>
+    <!-- Section Avantages -->
 
-  <!-- Section Avantages -->
-  <section id="avantages" class="section py-5 mb-5">
+    <!-- section en ligne -->
+    <section id="en-ligne" class="py-5 text-white bg-dark mt-5">
+      <div class="container">
+        <h2 class="display-4 text-center mb-5 text-shadow animated-title">Gestion Logistique</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4">
+            <div class="content-box d-flex flex-column align-items-center">
+              <img src="./img/truckermp.png" alt="Logo TruckerMP" class="img-fluid mb-3 logo-image">
+              <h3 class="text-center mb-3">Trucker MP</h3>
+              <p>Nous utilisons TruckerMP sur nos serveurs avec le tag [CM]. Chez CargoMaster, nous encourageons le respect des règles de conduite réelles et de TruckerMP pour une expérience de jeu réaliste et agréable.</p>
+              <div class="text-center">
+                <a href="https://truckersmp.com" target="_blank" class="btn btn-primary">Rejoignez-nous !</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="content-box d-flex flex-column align-items-center">
+              <img src="./img/trucksbook.png" alt="Logo TrucksBook" class="img-fluid mb-3 logo-image">
+              <h3 class="text-center mb-3">TrucksBook</h3>
+              <p>Nous utilisons TrucksBook pour enregistrer efficacement les feuilles de route de nos chauffeurs. Cela nous permet de suivre avec précision les trajets, les heures de conduite et d'optimiser notre gestion logistique.</p>
+              <div class="text-center">
+                <a href="https://trucksbook.eu" target="_blank" class="btn btn-primary">En savoir plus</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de la section en ligne -->
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center mb-5">
+            <h2 class="display-4 text-white text-floating animated-title">Nous Contacter</h2>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="contact-card">
+              <div class="card-header text-center">
+                <h3 class="card-title">Nous contacter via Discord</h3>
+              </div>
+              <div class="card-body text-center">
+                <p class="card-text">Rejoignez notre serveur Discord pour toutes les discussions, questions et mises à jour concernant CargoMaster.</p>
+                <a href="https://discord.gg/a-venir" class="btn btn-primary" target="_blank">Rejoindre notre Discord</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="contact-card">
+              <div class="card-header text-center">
+                <h3 class="card-title">Contact par email</h3>
+              </div>
+              <div class="card-body">
+                <form action="envoyer_email.php" method="POST">
+                  <div class="mb-3">
+                    <label for="nom" class="form-label text-white">Votre Nom</label>
+                    <input type="text" class="form-control" id="nom" name="nom" placeholder="Entrez votre nom">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label text-white">Votre email</label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Entrez votre adresse email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label text-white">Votre message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Entrez votre message"></textarea>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de la section Contact -->
+  </main>
+
+  <!-- Section Footer -->
+  <footer class="bg-dark text-white py-3 border-top">
     <div class="container">
-      <h2 class="display-4 text-center mb-4 text-white p-2 text-shadow text-floating mt-5 ml5">
-        <!-- titre plat à ouvert -->
-        <span class="text-wrapper">
-          <span class="line line1"></span>
-          <span class="letters letters-left">Avantages</span> <span class="letters ampersand">&amp;</span> <span class="letters letters-right">Communauté</span>
-          <span class="line line2"></span>
-        </span>
-      </h2>
-      <div class="row justify-content-center p-2">
-        <!-- Avantage 1 -->
-        <div class="col-md-4 mb-4 d-flex">
-          <div class="card h-100">
-            <img src="./img/attitre.png" title="Chaque camion est attitré" class="card-img-top card-img-custom avantage-img" alt="Camion attitré pour chaque chauffeur" loading="lazy">
-            <div class="card-body">
-              <h3 class="card-title text-shadow text-center">Chaque camion est attitré</h3>
-              <p class="card-text"><span class="text-primary text-gras">Chez CargoMaster</span>, chaque chauffeur se voit attribuer un camion dès son arrivée. Nous nous engageons à vous offrir des véhicules modernes pour surmonter tous les défis de la route. Que vous rouliez en solo ou en équipe, chez CargoMaster, vous trouverez votre place dans notre communauté passionnée. Rejoignez-nous pour découvrir les avantages de rouler avec nous.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Avantage 2 -->
-        <div class="col-md-4 mb-4 d-flex">
-          <div class="card h-100">
-            <img src="./img/online-offline.png" title="Plutôt en ligne ou hors ligne ?" class="card-img-top card-img-custom avantage-img" alt="Jouer en ligne ou hors ligne" loading="lazy">
-            <div class="card-body">
-              <h3 class="card-title text-shadow text-center">en ligne ou hors ligne ?</h3>
-              <p class="card-text"><span class="text-primary text-gras">Nous accueillons tous les joueurs</span>, qu'ils soient en ligne sur TruckerMP ou hors ligne. Chez CargoMaster, chaque chauffeur a sa place dans notre communauté. Nous sommes fiers de proposer des services de transport modernes et efficaces à tous. Que vous préfériez rouler en solo ou en équipe, vous trouverez votre place chez nous. Rejoignez-nous dès maintenant et découvrez les avantages de rouler avec CargoMaster.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Avantage 3 -->
-        <div class="col-md-4 mb-4 d-flex">
-          <div class="card h-100">
-            <img src="./img/appel-discord.png" title="Rejoignez notre communauté Discord" class="card-img-top card-img-custom avantage-img" alt="Communauté Discord" loading="lazy">
-            <div class="card-body">
-              <h3 class="card-title text-shadow">Rejoignez notre Discord</h3>
-              <p class="card-text"><a href="#">Rejoindre le serveur Discord</a> où tout le monde est le bienvenu !<span class="text-primary text-gras">Le micro n'est pas obligatoire !</span> Venez discuter avec nous et retrouvez toutes les informations sur notre compagnie virtuelle. Des annonces, des événements, des conseils et des discussions avec les autres chauffeurs, tout est disponible sur notre serveur Discord. Rejoignez-nous maintenant et faites partie de la communauté CargoMaster.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <p class="text-center">
+        Made with <i class="bi bi-bootstrap" style="color: #563d7c;"></i> Bootstrap
+      </p>
+      <p class="text-muted text-center">© 2024 CargoMaster | CargoMaster est une entreprise virtuelle fictive pour le jeu Euro Truck Simulator 2. Toute ressemblance avec une entreprise réelle est purement fortuite. Aucun droit réel n'est enfreint.</p>
+      <p class="text-muted text-center">Licence:
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+          <img alt="Licence Creative Commons" title="Licence creativecommons" class="license-img" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" loading="lazy">
+        </a>
+      </p>
     </div>
-  </section>
-  
-  <!-- Section Gestion Logistique et Conduite -->
-  <section id="en-ligne" class="section py-5 text-white bg-dark mt-5">
-    <div class="container">
-      <h2 class="display-4 text-center mb-4 text-white p-2 text-shadow text-floating mt-5 ml9"><span class="text-wrapper"><span class="letters">Gestion Logistique et Conduite</span></span></h2>
-      <div class="row align-items-center d-flex">
-        <div class="col-md-6">
-          <h3 class="display-4 text-floating mb-4">Trucker MP</h3>
-          <p>Nous utilisons TruckerMP sur nos serveurs Simulation 1 et 2 avec le tag [CM]· Chez CargoMaster, nous encourageons et appliquons strictement les règles réelles de conduite, que ce soit pour la vitesse, la courtoisie ou le respect du code de la route, ainsi que les règles spécifiques de TruckerMP·</p>
-  
-          <p>Notre engagement envers ces règles assure une expérience de jeu réaliste et agréable pour tous nos membres· En choisissant CargoMaster, vous rejoignez une communauté dédiée à la qualité et au respect sur les routes virtuelles d'Europe·</p>
-  
-          <a href="https://truckersmp.com" target="_blank" class="btn btn-primary">Rejoignez-nous sur TruckerMP !</a>
-        </div>
-        <div class="col-md-6 text-center d-none d-md-block">
-          <img src="./img/truckermp.png" title="Rejoignez-nous sur truckerMP!" alt="Image montrant le logo de TruckerMP" class="img-fluid rounded-pill mt-5 mt-md-0" loading="lazy">
-        </div>
-      </div>
-      <div class="row align-items-center d-flex">
-        <div class="col-md-6 text-center d-none d-md-block">
-          <img src="./img/trucksbook.png" title="Rejoignez-nous sur TrucksBook" alt="Image montrant le logo de TrucksBook" class="img-fluid rounded-circle mt-md-0" loading="lazy"> 
-        </div>
-        <div class="col-md-6 mt-5">
-          <h3 class="display-4 text-floating mb-4">TrucksBook</h3>
-          <p>Nous utilisons TrucksBook pour enregistrer efficacement les feuilles de route de nos chauffeurs· Cela nous permet de suivre avec précision les trajets effectués, les heures de conduite, ainsi que les détails essentiels pour assurer une gestion optimisée de nos opérations logistiques·
-          </p>
-  
-          <p>TrucksBook nous permet de centraliser et d'automatiser la collecte des données des feuilles de route, simplifiant ainsi notre gestion administrative.</p>
-  
-          <p>Que vous préfériez des trajets en solo ou en équipe, TrucksBook nous permet de vous offrir un service fiable, facile et moderne.</p>
-          <a href="https://trucksbook.eu" target="_blank" class="btn btn-primary">En savoir plus sur TrucksBook</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Fin de la section en ligne -->
+  </footer>
+  <!-- Fin de la section Footer -->
 
-  <!-- Section Contact -->
-  <section id="contact" class="section py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center mb-5">
-          <h2 class="display-4 text-white text-floating mt-5">Nous Contacter</h2>
-        </div>
-        <!-- Carte de contact Discord -->
-        <div class="col-md-5 mb-4 d-flex align-items-center justify-content-center">
-          <div class="card bg-primary text-white shadow card-discord">
-            <div class="card-body d-flex flex-column align-items-center justify-content-center">
-              <h3 class="card-title text-center mb-4 text-shadow">Nous contacter via Discord</h3>
-              <p class="card-text text-center">Rejoignez notre serveur Discord pour toutes les discussions, questions et mises à jour concernant CargoMaster.</p>
-              <p class="text-center">
-                <a href="https://discord.gg/a-venir" class="btn btn-primary btn-lg" target="_blank">Rejoindre notre Discord</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Séparateur vertical -->
-        <div class="col-md-2 mb-4 d-flex align-items-center justify-content-center">
-          <div class="vertical-line" style="height: 100%; border-left: 2px solid white;"></div>
-        </div>
-        <!-- Formulaire de contact par email -->
-        <div class="col-md-5 mb-4">
-          <h3 class="display-4 text-center mb-4 text-white p-2 text-shadow">Contact par email</h3>
-          <form action="envoyer_email.php" method="POST">
-            <div class="mb-3">
-              <label for="nom" class="form-label text-white">Votre Nom</label>
-              <input type="text" class="form-control" id="nom" name="nom" placeholder="Entrez votre nom">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label text-white">Votre email</label>
-              <input type="email" class="form-control" id="email" name="email" required placeholder="Entrez votre adresse email">
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label text-white">Votre message</label>
-              <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Entrez votre message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Fin de la section Contact -->
-</main>
+  <!-- Bootstrap JS et dépendances -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-<!-- Section Footer -->
-<footer class="bg-dark text-white py-3 border-top">
-  <div class="container">
-    <p class="text-center">
-      Made with <i class="bi bi-bootstrap" style="color: #563d7c;"></i> Bootstrap
-    </p>
-    <p class="text-muted text-center">© 2024 CargoMaster | CargoMaster est une entreprise virtuelle fictive pour le jeu Euro Truck Simulator 2. Toute ressemblance avec une entreprise réelle est purement fortuite. Aucun droit réel n'est enfreint.</p>
-    <p class="text-muted text-center">Licence:
-      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-        <img alt="Licence Creative Commons" title="Licence creativecommons" class="license-img" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" loading="lazy">
-      </a>
-    </p>
-  </div>
-</footer>
-<!-- Fin de la section Footer -->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- Bootstrap JS et dépendances -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- anime.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-<!-- JS personnalisé -->
-<script src="./js/scripts.js"></script>
+  <!-- JS personnalisé -->
+  <script src="./js/scripts.js"></script>
 </body>
 </html>
