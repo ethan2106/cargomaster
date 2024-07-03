@@ -7,7 +7,6 @@ body {
     font-family: 'Signika Negative', sans-serif;
 }
 
-
 /* Import des polices */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&display=swap');
@@ -20,9 +19,9 @@ body {
     background-position: center;
     position: relative;
     overflow: hidden;
-  }
-  
-  .hero::before {
+}
+
+.hero::before {
     content: "";
     position: absolute;
     top: 0;
@@ -31,9 +30,9 @@ body {
     height: 100%;
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
     z-index: -1;
-  }
-  
-  .hero::after {
+}
+
+.hero::after {
     content: "";
     position: absolute;
     top: 0;
@@ -43,33 +42,33 @@ body {
     background: inherit;
     filter: blur(5px);
     z-index: -2;
-  }
-  
-  .hero-content {
+}
+
+.hero-content {
     position: relative;
     z-index: 1;
-  }
-  
-  .hero-image {
+}
+
+.hero-image {
     position: relative;
     z-index: 1;
-  }
-  
-  .hero-img {
+}
+
+.hero-img {
     max-width: 600px;
     border: 10px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
     background-color: rgba(255, 255, 255, 0.2);
     padding: 20px;
     filter: brightness(1.1); /* Éclaircit légèrement l'image */
-  }
-  
-  .animated-title {
+}
+
+.animated-title {
     position: relative;
     animation: text-float 2s ease-in-out infinite, text-glow 2s ease-in-out infinite;
-  }
-  
-  .animated-title::before {
+}
+
+.animated-title::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -78,28 +77,31 @@ body {
     height: 2px;
     background: linear-gradient(to right, #007bff, #0056b3);
     animation: underline-animation 2s ease-in-out infinite;
-  }
-  
-  @keyframes text-float {
+}
+
+/* Animations pour les titres animés */
+@keyframes text-float {
     /* ... */
-  }
-  
-  @keyframes underline-animation {
+}
+
+@keyframes underline-animation {
     /* ... */
-  }
-  
-  @keyframes text-glow {
+}
+
+@keyframes text-glow {
     /* ... */
-  }
+}
+
+/* Styles pour la barre de navigation */
 .navbar-nav .nav-link {
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #fff;
     transition: all 0.3s ease;
-  }
-  
-  .navbar-nav .nav-link:before {
+}
+
+.navbar-nav .nav-link:before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -109,26 +111,27 @@ body {
     background: linear-gradient(to right, #007bff, #0056b3);
     transform: scaleX(0);
     transition: transform 0.3s ease;
-  }
-  
-  .navbar-nav .nav-link:hover {
+}
+
+.navbar-nav .nav-link:hover {
     color: #007bff;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  }
-  
-  .navbar-nav .nav-link:hover:before {
+}
+
+.navbar-nav .nav-link:hover:before {
     transform: scaleX(1);
-  }
-  
-  .navbar-nav .nav-link i {
+}
+
+.navbar-nav .nav-link i {
     color: #007bff;
     transition: all 0.3s ease;
-  }
-  
-  .navbar-nav .nav-link:hover i {
-    transform: scale(1.2);
-  }
+}
 
+.navbar-nav .nav-link:hover i {
+    transform: scale(1.2);
+}
+
+/* Styles pour le logo */
 .logo-img {
     max-width: 100px; /* Ajustez cette valeur en fonction de la taille souhaitée */
     height: auto; /* Permet de conserver les proportions */
@@ -150,7 +153,8 @@ body {
 .zoom-in-out {
     animation: zoomInOut 5s ease-in-out infinite; /* Animation de zoom in/out du logo */
 }
-/* discord sur la navbar */
+
+/* Styles pour le bouton Discord sur la navbar */
 .btn-discord {
     background: linear-gradient(to right, #7289da, #5b6eae);
     color: #fff;
@@ -159,14 +163,14 @@ body {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-  }
-  
-  .btn-discord:hover {
+}
+
+.btn-discord:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .btn-discord:before {
+}
+
+.btn-discord:before {
     content: "";
     position: absolute;
     top: 0;
@@ -177,64 +181,62 @@ body {
     transform: translateX(-100%) rotate(45deg);
     transition: all 0.6s ease;
     opacity: 0;
-  }
-  
-  .btn-discord:hover:before {
+}
+
+.btn-discord:hover:before {
     transform: translateX(100%) rotate(45deg);
     opacity: 1;
-  }
-  
-  .discord-icon {
+}
+
+.discord-icon {
     font-size: 1.5rem;
     animation: discord-spin 2s infinite linear;
-  }
-  
-  .discord-text {
+}
+
+.discord-text {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-  }
-  
-  @keyframes discord-spin {
+}
+
+@keyframes discord-spin {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
+}
 
-/* cartes avantages*/
+/* Styles pour les cartes d'avantages */
 .custom-card {
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-  }
-  
-  .custom-card:hover {
+}
+
+.custom-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card-img-top {
+}
+
+.card-img-top {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-  }
-  
-  .card-title {
+}
+
+.card-title {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #007bff;
-  }
-  
-  .card-text {
+}
+
+.card-text {
     font-family: 'Roboto', sans-serif;
     color: #555;
-  }
+}
 
-/* ligne séparatrice verticale */
-
-/* Styles généraux pour tous les boutons */
+/* Styles pour les boutons */
 .btn {
     border-radius: 25px;
     padding: 10px 20px;
@@ -243,20 +245,19 @@ body {
     overflow: hidden;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-  }
-  
-  /* Styles spécifiques pour les boutons primaires */
-  .btn-primary {
+}
+
+.btn-primary {
     background: linear-gradient(to right, #007bff, #0056b3);
     color: #fff;
-  }
-  
-  .btn-primary:hover {
+}
+
+.btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .btn-primary:before {
+}
+
+.btn-primary:before {
     content: "";
     position: absolute;
     top: 0;
@@ -267,27 +268,35 @@ body {
     transform: translateX(-100%) rotate(45deg);
     transition: all 0.6s ease;
     opacity: 0;
-  }
-  
-  .btn-primary:hover:before {
+}
+
+.btn-primary:hover:before {
     transform: translateX(100%) rotate(45deg);
     opacity: 1;
-  }
-  
-  /* Styles spécifiques pour les boutons secondaires */
-
-/* discord carte */
+}
 
 /* Utilitaires */
 .text-shadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre aux textes */
 }
 
-/* texte en bleu */
+/* Styles pour les textes flottants */
+.text-floating {
+    position: relative;
+    animation: float-up 2s ease-in-out infinite;
+}
 
-/* texte en gras */
-
-/* texte souligné */
+@keyframes float-up {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
 /* Media queries */
 @media (max-width: 576px) {
@@ -309,17 +318,15 @@ body {
     }
 }
 
-/* texte en noir */
-
-/* titre animés */
+/* Styles pour les titres animés */
 .animated-title {
     position: relative;
     animation: text-float 2s ease-in-out infinite;
     text-align: center;
     margin-bottom: 3rem; /* Ajout d'une marge inférieure */
-  }
-  
-  .animated-title::before {
+}
+
+.animated-title::before {
     content: "";
     position: absolute;
     bottom: -1.5rem; /* Ajustement de la position du soulignement */
@@ -331,40 +338,10 @@ body {
     height: 2px;
     background: linear-gradient(to right, #007bff, #0056b3);
     animation: underline-animation 2s ease-in-out infinite;
-  }
-  
-  @keyframes text-float {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes underline-animation {
-    0% {
-      transform: scaleX(0);
-      transform-origin: left;
-    }
-    50% {
-      transform: scaleX(1);
-      transform-origin: left;
-    }
-    50.1% {
-      transform: scaleX(1);
-      transform-origin: right;
-    }
-    100% {
-      transform: scaleX(0);
-      transform-origin: right;
-    }
-  }
-/* box pour la section online*/
-  .content-box {
+}
+
+/* Styles pour les boîtes de contenu de la section en ligne */
+.content-box {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -374,64 +351,66 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .content-box:hover {
+}
+
+.content-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  }
-  
-  .content-box h3 {
+}
+
+.content-box h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #007bff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  }
-  
-  .content-box p {
+}
+
+.content-box p {
     font-family: 'Roboto', sans-serif;
     color: #ddd;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  }
-  
-  .logo-image {
+}
+
+.logo-image {
     max-height: 150px;
     object-fit: contain;
-  }
-  .contact-card {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
+}
+
+/* Styles pour les cartes de contact */
+.contact-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
 
 .contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .contact-card .card-header {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
 }
 
 .contact-card .card-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  color: #007bff;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #007bff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0;
 }
 
 .contact-card .card-body {
-  padding: 30px;
+    padding: 30px;
 }
 
 .contact-card .card-text {
-  font-family: 'Roboto', sans-serif;
-  color: #ddd;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #ddd;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
 }
