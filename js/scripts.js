@@ -13,7 +13,7 @@ $(document).ready(function() {
       if ($(target).length) {
         $('html, body').animate({
           scrollTop: $(target).offset().top
-        }, 600, 'linear');
+        }, 1500, 'linear');
       } else {
         console.log("Element cible non trouvé : " + target);
       }
