@@ -4,7 +4,6 @@
 <head>
   <!-- Section des métadonnées -->
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Language" content="fr">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="CargoMaster est une entreprise virtuelle fictive pour le jeu Euro Truck Simulator 2, offrant des services de transport moderne et efficace à travers la France et ses pays voisins.">
@@ -96,7 +95,14 @@
   <!-- Section Avantages -->
   <section id="avantages" class="section py-5 mb-5">
     <div class="container">
-      <h2 class="display-4 text-center mb-4 text-white p-2 text-shadow text-floating mt-5">Des avantages pour chaque chauffeur</h2>
+      <h2 class="display-4 text-center mb-4 text-white p-2 text-shadow text-floating mt-5 ml5">
+        <!-- titre plat à ouvert -->
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span class="letters letters-left">Avantages</span> <span class="letters ampersand">&amp;</span> <span class="letters letters-right">Communauté</span>
+          <span class="line line2"></span>
+        </span>
+      </h2>
       <div class="row justify-content-center p-2">
         <!-- Avantage 1 -->
         <div class="col-md-4 mb-4 d-flex">
@@ -135,7 +141,7 @@
   <!-- Section Gestion Logistique et Conduite -->
   <section id="en-ligne" class="section py-5 text-white bg-dark mt-5">
     <div class="container">
-      <h2 class="display-4 text-center mb-4 text-white p-2 text-shadow text-floating mt-5">Gestion Logistique et Conduite</h2>
+      <h2 class="display-4 text-center mb-4 text-white p-2 text-shadow text-floating mt-5 ml9"><span class="text-wrapper"><span class="letters">Gestion Logistique et Conduite</span></span></h2>
       <div class="row align-items-center d-flex">
         <div class="col-md-6">
           <h3 class="display-4 text-floating mb-4">Trucker MP</h3>
@@ -174,7 +180,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center mb-5">
-          <h2 class="display-4 text-white text-floating mt-5">Nous Contacter</h3>
+          <h2 class="display-4 text-white text-floating mt-5">Nous Contacter</h2>
         </div>
         <!-- Carte de contact Discord -->
         <div class="col-md-5 mb-4 d-flex align-items-center justify-content-center">
@@ -194,7 +200,7 @@
         </div>
         <!-- Formulaire de contact par email -->
         <div class="col-md-5 mb-4">
-          <h3 class="display-4 text-center mb-4 text-white p-2 text-shadow">Contact par email</h2>
+          <h3 class="display-4 text-center mb-4 text-white p-2 text-shadow">Contact par email</h3>
           <form action="envoyer_email.php" method="POST">
             <div class="mb-3">
               <label for="nom" class="form-label text-white">Votre Nom</label>
@@ -238,6 +244,9 @@
   
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- anime.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
 <!-- JS personnalisé -->
 <script src="./js/scripts.js"></script>
