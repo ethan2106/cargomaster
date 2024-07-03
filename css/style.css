@@ -56,6 +56,12 @@ h2, h3, h4, h5, h6 {
   font-size: 1.5em; /* adjust the size to your liking */
 }
 
+/* logo navbar */
+.logo-img {
+    max-width: 100px; /* Ajustez cette valeur en fonction de la taille souhaitée */
+    height: auto; /* Permet de conserver les proportions */
+}
+
 /* Section hero */
 .hero {
   background-image: url('../img/blurry.png');
