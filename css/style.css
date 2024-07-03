@@ -89,22 +89,17 @@ body {
 
 /* bouton d'appel to action */
 .btn-primary {
+    color: #f8f9fa; /* Darker shade of white */
     background-color: #007bff;
     border-color: #007bff;
-    color: #fff;
-    font-weight: bold;
-    padding: 14px 28px;
-    font-size: 18px;
-    transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    /* Add a scale effect on hover */
-    transform: scale(1.05);
+    color: #f8f9fa; /* Darker shade of white for hover state */
+    background-color: #0069d9;
+    border-color: #0062cc;
 }
+
 
 /* discord carte */
 .card-discord {
