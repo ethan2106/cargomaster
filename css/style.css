@@ -114,6 +114,21 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre aux textes */
 }
 
+/* texte en bleu */
+.text-primary{ 
+    color: #007bff;
+}
+
+/* texte en gras */
+.text-gras{ 
+    font-weight: bold;
+}
+
+/* texte souligné */
+.text-souligne{
+    text-decoration: underline;
+}
+
 .icon-primary {
     color: #007bff;
 }
