@@ -62,6 +62,24 @@ h2, h3, h4, h5, h6 {
     height: auto; /* Permet de conserver les proportions */
 }
 
+/* Animation zoom in/out du logo */
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1); /* Taille normale */
+    }
+    50% {
+        transform: scale(1.2); /* Zoom in à 120% */
+    }
+    100% {
+        transform: scale(1); /* Retour à la taille normale */
+    }
+}
+
+/* Appliquer l'animation à l'image */
+.zoom-in-out {
+    animation: zoomInOut 5s ease-in-out infinite; /* Durée de l'animation et répétition infinie */
+}
+
 /* Section hero */
 .hero {
   background-image: url('../img/blurry.png');
