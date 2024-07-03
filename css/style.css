@@ -79,17 +79,23 @@ body {
     animation: underline-animation 2s ease-in-out infinite;
 }
 
-/* Animations pour les titres animés */
-@keyframes text-float {
-    /* ... */
-}
-
 @keyframes underline-animation {
-    /* ... */
-}
-
-@keyframes text-glow {
-    /* ... */
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    50% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    50.1% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+    100% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
 }
 
 /* Styles pour la barre de navigation */
