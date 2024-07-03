@@ -206,3 +206,12 @@ body {
     transform: translateY(0); 
 }
 
+.rounded-pill {
+    background-color: #3A72BD !important;
+    /* Autres styles optionnels pour la taille, la position, etc. */
+}
+
+.rounded-circle {
+    background-color: #3A72BD !important;
+    /* Autres styles optionnels pour la taille, la position, etc. */
+}
