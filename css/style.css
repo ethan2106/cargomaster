@@ -63,6 +63,10 @@ h2, h3, h4, h5, h6 {
     background-position: center;
 }
 
+/* texte hero plus bas */
+.move-down {
+    margin-top: 150px; /* ajustez la valeur selon vos besoins */
+  }
 .hero-image img.hero-img {
     width: 100%;
     height: auto;
