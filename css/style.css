@@ -61,6 +61,7 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     padding: 20px;
     filter: brightness(1.1); /* Éclaircit légèrement l'image */
+    
 }
 
 /* titre animé  avec une ligne bleue*/
@@ -214,6 +215,7 @@ body {
     }
 }
 
+
 /* Styles pour les cartes d'avantages */
 .custom-card {
     border: none;
@@ -224,7 +226,7 @@ body {
 
 .custom-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px rgba(0, 123, 255, 0.3);
 }
 
 .card-img-top {
@@ -382,6 +384,63 @@ body {
     max-height: 150px;
     object-fit: contain;
 }
+
+/* Styles pour l'accordéon des services */
+.accordion-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .accordion-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .accordion-header {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .accordion-button {
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+  
+  .accordion-body {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ddd;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+  }
+  
+  .service-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #007bff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .service-title {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
 
 /* Styles pour les cartes de contact */
 .contact-card {
